@@ -19,6 +19,10 @@ rep(4, times=3)
 # Selecting vector elements 
 x <- c(2, 4, 6, 10, 23, 45)
 
+# Factor 
+gender <- factor(c("male", "female", "male", "female"))
+gender
+
 # By position 
 # Select the fourth element 
 x[4] 
@@ -50,6 +54,18 @@ m[, 1]
 
 # Select an element 
 m[2, 3]
+
+# Data Frames - two dimensional data structure 
+df <- data.frame(
+  age = c(23, 12, 16, 17), 
+  gender = factor(c("male", "female", "male", "female"))
+  
+)
+
+df
+
+# exploration 
+str(df)
 
 # Comparison (TRUE / FALSE)
 a <- 5 
@@ -135,8 +151,6 @@ while(i <= 10) {
   print(i)
   i <- i + 1
 }
-
-
 
 
 
